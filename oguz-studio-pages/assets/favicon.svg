@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Oguz Studio OS logo">
-  <rect x="2" y="2" width="60" height="60" rx="15" fill="#080c16" stroke="#9df3d0" stroke-width="1.5"/>
-  <text x="9" y="39" fill="#9df3d0" font-family="Consolas, Menlo, monospace" font-size="25" font-weight="800" letter-spacing="-2">OS</text>
-  <path d="M39 43h13" stroke="#9df3d0" stroke-width="4" stroke-linecap="square"/>
-</svg>
