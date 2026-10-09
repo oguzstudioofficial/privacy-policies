@@ -3,101 +3,159 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1020">
-  <meta name="description" content="Oguz Studio — günlük yaşam, sağlık ve eğlence için sade, kullanışlı mobil uygulamalar.">
-  <title>Oguz Studio — Mobil uygulamalar</title>
+  <meta name="theme-color" content="#080c16">
+  <meta name="description" content="Oguz Studio — VitaMetrix, UnPuff ve Tetrix Block mobil uygulamaları.">
+  <meta property="og:title" content="Oguz Studio — Ideas into apps">
+  <meta property="og:description" content="Thoughtful mobile apps for everyday life.">
+  <meta property="og:type" content="website">
+  <title>Oguz Studio — Ideas into apps</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">İçeriğe geç</a>
+  <a class="skip-link" href="#main" data-i18n="skip">İçeriğe geç</a>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Oguz Studio ana sayfa">
-      <span class="brand-mark">O<span>.</span></span>
-      <span>OGUZ <b>STUDIO</b></span>
-    </a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç">☰</button>
-    <nav id="site-nav" class="site-nav" aria-label="Ana menü">
-      <a href="#apps">Uygulamalar</a>
-      <a href="#about">Hakkımızda</a>
-      <a href="#contact">İletişim</a>
-    </nav>
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Oguz Studio ana sayfa">
+        <span class="brand-mark" aria-hidden="true"><span>OS</span><i>_</i></span>
+        <span class="brand-name">OGUZ<span>STUDIO</span></span>
+      </a>
+      <div class="header-right">
+        <div class="language-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-button active" data-lang="tr" aria-pressed="true">TR</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç">
+          <span></span><span></span>
+        </button>
+      </div>
+      <nav id="site-nav" class="site-nav" aria-label="Ana menü">
+        <a href="#apps" data-i18n="nav_apps">Uygulamalar</a>
+        <a href="#studio" data-i18n="nav_studio">Stüdyo</a>
+        <a href="#contact" data-i18n="nav_contact">İletişim</a>
+        <a class="nav-cta" href="#apps"><span data-i18n="nav_cta">Projeleri keşfet</span><span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
     <section class="hero section-wrap" id="top">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> Bağımsız uygulama stüdyosu</p>
-        <h1>Fikirleri, <span>faydalı deneyimlere</span> dönüştürüyoruz.</h1>
-        <p class="hero-lead">Sağlık alışkanlıklarından odaklanmaya, kısa molalardan küçük meydan okumalara kadar günlük hayatı kolaylaştıran mobil uygulamalar geliştiriyoruz.</p>
+        <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="hero_eyebrow">BAĞIMSIZ YAZILIM STÜDYOSU</span></div>
+        <h1 data-i18n="hero_title">Fikirlerden<br>gerçek <span class="gradient-text">deneyimlere.</span></h1>
+        <p class="hero-lead" data-i18n="hero_lead">Günlük yaşamı kolaylaştıran, hedeflere odaklanmayı destekleyen ve boş zamanlara eğlence katan dijital ürünler geliştiriyoruz.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#apps">Uygulamaları keşfet <span aria-hidden="true">↘</span></a>
-          <a class="text-link" href="#about">Oguz Studio hakkında</a>
+          <a class="button button-primary" href="#apps"><span data-i18n="hero_primary">Uygulamaları keşfet</span><span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="#studio"><span data-i18n="hero_secondary">Bizi tanı</span><span aria-hidden="true">↗</span></a>
         </div>
-        <p class="hero-note">Android uygulamaları · Kapalı test aşamasında</p>
+        <div class="hero-meta"><span class="pulse-dot"></span><span data-i18n="hero_meta">Üç proje · Android için geliştiriliyor</span></div>
       </div>
-      <div class="hero-art" aria-label="Üç uygulamayı temsil eden dekoratif kartlar">
-        <div class="orb orb-one"></div><div class="orb orb-two"></div>
-        <div class="floating-card card-vit"><span class="app-symbol symbol-vit">V</span><div><b>VitaMetrix</b><small>Sağlık & Fitness</small></div><span class="card-arrow">↗</span></div>
-        <div class="floating-card card-un"><span class="app-symbol symbol-un">U</span><div><b>UnPuff</b><small>Alışkanlık takibi</small></div><span class="card-arrow">↗</span></div>
-        <div class="floating-card card-tet"><span class="app-symbol symbol-tet">T</span><div><b>Tetrix Block</b><small>Bulmaca & eğlence</small></div><span class="card-arrow">↗</span></div>
-        <div class="hero-caption">Küçük adımlar. Daha iyi deneyimler.</div>
+
+      <div class="hero-visual" aria-label="Oguz Studio uygulama projeleri">
+        <div class="visual-grid"></div><div class="visual-glow"></div>
+        <div class="code-window">
+          <div class="window-bar">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>oguz-studio / projects</span><span class="window-status">● IDEAS IN MOTION</span>
+          </div>
+          <div class="code-content">
+            <div class="code-line"><span class="line-no">01</span><span class="syntax-purple">const</span> <span class="syntax-blue">studio</span> = {</div>
+            <div class="code-line indent"><span class="syntax-green">name</span>: <span class="syntax-yellow">"Oguz Studio"</span>,</div>
+            <div class="code-line indent"><span class="syntax-green">focus</span>: [</div>
+            <div class="code-line indent2"><span class="syntax-yellow">"health"</span>,</div>
+            <div class="code-line indent2"><span class="syntax-yellow">"habits"</span>,</div>
+            <div class="code-line indent2"><span class="syntax-yellow">"play"</span></div>
+            <div class="code-line indent">],</div><div class="code-line">};</div>
+            <div class="code-line code-comment">// turning ideas into useful apps<span class="typing-cursor">_</span></div>
+          </div>
+          <div class="window-footer"><span><i class="footer-check">✓</i><span data-i18n="code_footer">Özenle geliştiriliyor</span></span><span>UTF-8 · main</span></div>
+        </div>
+        <div class="float-chip chip-one"><span class="chip-icon chip-v">V</span><span><b>VitaMetrix</b><small>Health &amp; Fitness</small></span><span class="chip-arrow">↗</span></div>
+        <div class="float-chip chip-two"><span class="chip-icon chip-u">U</span><span><b>UnPuff</b><small data-i18n="chip_un">Build better habits</small></span><span class="chip-arrow">↗</span></div>
+        <div class="float-chip chip-three"><span class="chip-icon chip-t">T</span><span><b>Tetrix Block</b><small data-i18n="chip_tet">Play &amp; think</small></span><span class="chip-arrow">↗</span></div>
+        <div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div>
       </div>
     </section>
 
     <section class="apps-section section-wrap" id="apps">
       <div class="section-heading">
-        <div><p class="eyebrow">UYGULAMA KOLEKSİYONU</p><h2>Ne yapmak istersin?</h2></div>
-        <p>Her uygulama farklı bir ihtiyaca odaklanır. Birini keşfet, sana uygun olanı bul.</p>
+        <div><div class="eyebrow" data-i18n="apps_eyebrow">PROJELERİMİZ / 001—003</div><h2 data-i18n="apps_title">Her fikrin bir amacı var.</h2></div>
+        <p data-i18n="apps_intro">Farklı ihtiyaçlar için tasarlanan üç uygulama. Projeleri incele ve Google Play kapalı test sayfasına göz at.</p>
       </div>
+
       <div class="app-grid">
-        <article class="app-card vit-card">
-          <div class="app-card-top"><span class="app-symbol symbol-vit">V</span><span class="app-category">SAĞLIK & FITNESS</span></div>
-          <h3>VitaMetrix</h3>
-          <p class="app-tagline">Sağlığını tanı. İlerlemeni takip et.</p>
-          <p>Sağlık ve fitness hedeflerini, günlük kayıtlarını ve gelişimini tek yerde takip etmene yardımcı olan kişisel bir araç.</p>
-          <ul class="feature-list"><li>Günlük takip ve istatistikler</li><li>Fitness hedefleri ve alışkanlıklar</li><li>İlerlemeni daha anlaşılır gör</li></ul>
-          <div class="card-footer"><a class="button button-dark" href="https://play.google.com/apps/testing/com.oguzstudio.vitametrix" target="_blank" rel="noopener">Kapalı teste katıl <span>↗</span></a><a class="privacy-link" href="privacy/vitametrix.html">Gizlilik politikası</a></div>
+        <article class="app-card card-vit">
+          <div class="card-topline"><span class="project-index">PROJECT_001</span><span class="project-dot"></span></div>
+          <div class="app-identity"><span class="app-logo logo-vit">V<span>+</span></span><span class="app-type">HEALTH / FITNESS</span></div>
+          <h3>VitaMetrix</h3><p class="app-subtitle" data-i18n="vit_tagline">Sağlığını tanı. İlerlemeni takip et.</p>
+          <p class="app-description" data-i18n="vit_desc">Fitness hedeflerini, günlük kayıtlarını ve gelişimini daha anlaşılır şekilde takip etmene yardımcı olan kişisel sağlık ve fitness aracı.</p>
+          <div class="tag-row"><span data-i18n="vit_tag1">Günlük takip</span><span data-i18n="vit_tag2">Hedefler</span><span data-i18n="vit_tag3">İstatistikler</span></div>
+          <div class="app-card-footer">
+            <a class="button button-card" href="https://play.google.com/apps/testing/com.oguzstudio.vitametrix" target="_blank" rel="noopener noreferrer"><span data-i18n="join_test">Kapalı teste katıl</span><span aria-hidden="true">↗</span></a>
+            <a class="policy-link" href="https://oguzstudioofficial.github.io/privacy-policies/vitametrix-privacy-policy.html"><span data-i18n="privacy">Gizlilik politikası</span><span aria-hidden="true">↗</span></a>
+          </div>
         </article>
-        <article class="app-card un-card">
-          <div class="app-card-top"><span class="app-symbol symbol-un">U</span><span class="app-category">ALIŞKANLIK & ODAK</span></div>
-          <h3>UnPuff</h3>
-          <p class="app-tagline">Daha bilinçli seçimler. Her gün.</p>
-          <p>Bir alışkanlığı azaltma veya bırakma yolculuğunda ilerlemeyi görünür kılmaya ve motivasyonunu korumaya odaklanır.</p>
-          <ul class="feature-list"><li>İlerleme ve hedef takibi</li><li>Kişisel motivasyon alanı</li><li>Adım adım gelişim yaklaşımı</li></ul>
-          <div class="card-footer"><a class="button button-dark" href="https://play.google.com/apps/testing/com.oguzstudio.unpuff" target="_blank" rel="noopener">Kapalı teste katıl <span>↗</span></a><a class="privacy-link" href="privacy/unpuff.html">Gizlilik politikası</a></div>
+
+        <article class="app-card card-un">
+          <div class="card-topline"><span class="project-index">PROJECT_002</span><span class="project-dot"></span></div>
+          <div class="app-identity"><span class="app-logo logo-un">U<span>•</span></span><span class="app-type">HABITS / WELLBEING</span></div>
+          <h3>UnPuff</h3><p class="app-subtitle" data-i18n="un_tagline">Daha bilinçli seçimler. Her gün.</p>
+          <p class="app-description" data-i18n="un_desc">Sigarayı bırakma yolculuğunda ilerlemeyi görünür kılmaya, hedeflerini hatırlamaya ve motivasyonunu korumaya odaklanan bir yardımcı.</p>
+          <div class="tag-row"><span data-i18n="un_tag1">İlerleme</span><span data-i18n="un_tag2">Hedef takibi</span><span data-i18n="un_tag3">Motivasyon</span></div>
+          <div class="app-card-footer">
+            <a class="button button-card" href="https://play.google.com/apps/testing/com.oguzstudio.unpuff" target="_blank" rel="noopener noreferrer"><span data-i18n="join_test">Kapalı teste katıl</span><span aria-hidden="true">↗</span></a>
+            <a class="policy-link" href="https://oguzstudioofficial.github.io/privacy-policies/unpuff-privacy-policy.html"><span data-i18n="privacy">Gizlilik politikası</span><span aria-hidden="true">↗</span></a>
+          </div>
         </article>
-        <article class="app-card tet-card">
-          <div class="app-card-top"><span class="app-symbol symbol-tet">T</span><span class="app-category">BULMACA & EĞLENCE</span></div>
-          <h3>Tetrix Block</h3>
-          <p class="app-tagline">Yerleştir. Eşleştir. Rekorunu geliştir.</p>
-          <p>Boş zamanlarına kısa ve keyifli bulmaca seansları eklemek için tasarlanan blok yerleştirme oyunu.</p>
-          <ul class="feature-list"><li>Blok yerleştirme odaklı oynanış</li><li>Kısa oyun seansları</li><li>Kendi skorunu geliştirme hedefi</li></ul>
-          <div class="card-footer"><a class="button button-dark" href="https://play.google.com/apps/testing/com.oguzstudio.tetrixblock" target="_blank" rel="noopener">Kapalı teste katıl <span>↗</span></a><a class="privacy-link" href="privacy/tetrixblock.html">Gizlilik politikası</a></div>
+
+        <article class="app-card card-tet">
+          <div class="card-topline"><span class="project-index">PROJECT_003</span><span class="project-dot"></span></div>
+          <div class="app-identity"><span class="app-logo logo-tet">T<span>▦</span></span><span class="app-type">PUZZLE / ARCADE</span></div>
+          <h3>Tetrix Block</h3><p class="app-subtitle" data-i18n="tet_tagline">Yerleştir. Planla. Rekorunu geliştir.</p>
+          <p class="app-description" data-i18n="tet_desc">Blokları stratejik şekilde yerleştirmeye dayanan, kısa oyun seanslarıyla düşünme ve skorunu geliştirme deneyimi sunan bulmaca oyunu.</p>
+          <div class="tag-row"><span data-i18n="tet_tag1">Bulmaca</span><span data-i18n="tet_tag2">Strateji</span><span data-i18n="tet_tag3">Skor</span></div>
+          <div class="app-card-footer">
+            <a class="button button-card" href="https://play.google.com/apps/testing/com.oguzstudio.tetrixblock" target="_blank" rel="noopener noreferrer"><span data-i18n="join_test">Kapalı teste katıl</span><span aria-hidden="true">↗</span></a>
+            <a class="policy-link" href="https://oguzstudioofficial.github.io/privacy-policies/tetrixblock-privacy-policy.html"><span data-i18n="privacy">Gizlilik politikası</span><span aria-hidden="true">↗</span></a>
+          </div>
         </article>
       </div>
-      <p class="testing-note"><span aria-hidden="true">ⓘ</span> Bu bağlantılar Google Play kapalı test sayfalarına yönlendirir. Katılım ve yükleme koşulları Google Play tarafından belirlenir.</p>
+      <div class="testing-disclaimer"><span class="info-icon">i</span><p data-i18n="disclaimer">Test bağlantıları Google Play kapalı test sayfalarına gider. Teste katılım, uygunluk ve uygulamayı yükleme koşulları Google Play tarafından belirlenir.</p></div>
     </section>
 
-    <section class="about-section" id="about">
-      <div class="section-wrap about-inner">
-        <div><p class="eyebrow">OGUZ STUDIO</p><h2>Basit, özenli ve işe yarayan yazılımlar.</h2></div>
-        <div class="about-copy"><p>Oguz Studio, günlük yaşamın farklı alanlarına yönelik dijital ürünler geliştiren bağımsız bir stüdyodur. Amacımız; anlaşılır arayüzleri, pratik özellikleri ve kullanıcı odaklı yaklaşımı bir araya getirmek.</p><p>Uygulamalarımız geliştikçe bu sayfada yeni sürümler ve yeni projeler hakkında bilgi paylaşacağız.</p></div>
+    <section class="studio-section" id="studio">
+      <div class="section-wrap studio-layout">
+        <div class="studio-heading"><div class="eyebrow" data-i18n="about_eyebrow">STÜDYO HAKKINDA</div><h2 data-i18n="about_title">Az karmaşa.<br><span class="gradient-text">Daha iyi yazılım.</span></h2>
+          <div class="studio-signature"><span class="signature-mark">OS<span>_</span></span><span>OGUZ STUDIO<br><small data-i18n="independent">Bağımsız geliştirici</small></span></div>
+        </div>
+        <div class="studio-copy">
+          <p class="studio-lead" data-i18n="about_lead">Oguz Studio, gerçek ihtiyaçlardan yola çıkan dijital ürünler geliştiren bağımsız bir yazılım stüdyosudur.</p>
+          <p data-i18n="about_p1">Amacımız; özenli arayüzleri, anlaşılır deneyimleri ve işe yarayan özellikleri bir araya getirerek insanların günlük hayatına değer katan uygulamalar üretmek.</p>
+          <p data-i18n="about_p2">Ürünlerimizi geliştirirken kullanılabilirliğe, görsel tutarlılığa ve kullanıcı geri bildirimlerine önem veriyoruz. Her proje, daha iyi bir deneyime doğru atılan yeni bir adım.</p>
+          <div class="studio-values"><div><span>01</span><b data-i18n="value1">İşe yarar tasarım</b></div><div><span>02</span><b data-i18n="value2">Özenle geliştirildi</b></div><div><span>03</span><b data-i18n="value3">Sürekli gelişim</b></div></div>
+        </div>
       </div>
     </section>
 
     <section class="contact-section section-wrap" id="contact">
-      <div><p class="eyebrow">İLETİŞİM</p><h2>Bir fikrin veya geri bildirimin mi var?</h2><p>Uygulamalarla ilgili öneri, hata bildirimi veya iş birliği için e-posta gönderebilirsin.</p></div>
-      <a class="button button-primary" href="mailto:oguzstudio.contact@gmail.com?subject=Oguz%20Studio%20-%20Geri%20Bildirim">E-posta gönder <span>↗</span></a>
+      <div class="contact-mark" aria-hidden="true">↗</div>
+      <div class="contact-copy"><div class="eyebrow" data-i18n="contact_eyebrow">İLETİŞİM KURALIM</div><h2 data-i18n="contact_title">Bir sonraki iyi fikir<br>bir mesajla başlayabilir.</h2><p data-i18n="contact_desc">Geri bildirim, hata bildirimi veya iş birliği için bize ulaş.</p></div>
+      <a class="button button-primary contact-button" href="mailto:oguzstudioofficial@gmail.com?subject=Oguz%20Studio%20-%20Iletisim"><span data-i18n="send_email">E-posta gönder</span><span aria-hidden="true">↗</span></a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <a class="brand brand-footer" href="#top"><span class="brand-mark">O<span>.</span></span><span>OGUZ <b>STUDIO</b></span></a>
-    <p>Bağımsız geliştirildi. Özenle tasarlandı.</p>
-    <div class="footer-links"><a href="privacy/vitametrix.html">VitaMetrix gizlilik</a><a href="privacy/unpuff.html">UnPuff gizlilik</a><a href="privacy/tetrixblock.html">Tetrix Block gizlilik</a></div>
-    <small>© <span id="year">2026</span> Oguz Studio. Tüm hakları saklıdır.</small>
+    <div class="footer-main">
+      <a class="brand footer-brand" href="#top" aria-label="Oguz Studio ana sayfa"><span class="brand-mark" aria-hidden="true"><span>OS</span><i>_</i></span><span class="brand-name">OGUZ<span>STUDIO</span></span></a>
+      <p data-i18n="footer_tagline">Fikirlerden uygulamalara. Özenle geliştirildi.</p>
+      <a class="footer-email" href="mailto:oguzstudioofficial@gmail.com">oguzstudioofficial@gmail.com</a>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> Oguz Studio. <span data-i18n="rights">Tüm hakları saklıdır.</span></span>
+      <div class="footer-policies"><a href="https://oguzstudioofficial.github.io/privacy-policies/vitametrix-privacy-policy.html">VitaMetrix privacy</a><a href="https://oguzstudioofficial.github.io/privacy-policies/unpuff-privacy-policy.html">UnPuff privacy</a><a href="https://oguzstudioofficial.github.io/privacy-policies/tetrixblock-privacy-policy.html">Tetrix Block privacy</a></div>
+      <a class="back-top" href="#top" data-i18n="back_top">Yukarı dön ↑</a>
+    </div>
   </footer>
 </body>
 </html>
