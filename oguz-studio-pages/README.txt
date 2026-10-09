@@ -6,9 +6,6 @@ Bu paket sadece güncellenmesi gereken dosyaları içerir:
 3. assets/js/main.js
 4. assets/favicon.svg
 
-GitHub'da mevcut repodaki aynı dosyaların içeriğini değiştir. Başka dosyalara dokunma.
-Mevcut privacy policy HTML dosyalarını silme/değiştirme.
-
 Gizlilik politikaları:
 - https://oguzstudioofficial.github.io/privacy-policies/vitametrix-privacy-policy.html
 - https://oguzstudioofficial.github.io/privacy-policies/unpuff-privacy-policy.html
