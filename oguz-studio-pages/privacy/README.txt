@@ -1,1 +1,0 @@
-Bu klasör örnek dosya yapısı içindir. Mevcut gizlilik politikalarınızı bu klasöre kopyalamanız gerekmez. index.html içindeki privacy bağlantılarını mevcut gerçek dosya yollarınıza göre düzenleyin. Mevcut politikalarınızı silmeyin veya doğrulamadan örnek metinle değiştirmeyin.
